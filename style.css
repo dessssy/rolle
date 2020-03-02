@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+
+body {
+    background-image: url(images/svg-bg.svg);
+    background-repeat: no-repeat;
+    /* background-image: linear-gradient( 40deg, rgb(15, 80, 202), rgb(5, 23, 53)); */
+}
+
+.main-heading-container {
+    background-image: linear-gradient( 20deg, rgba(15, 80, 202, 0.7), rgba(5, 23, 53, 0.7));
+}
+
+.container,
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.prime-nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.nav {
+    margin-right: 10px;
+    padding: 10px;    
+}
+
+.nav:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px rgb(230, 226, 22);  
+    transform: scaleX(0);  
+    transition: transform .2s ease-in-out;
+}
+
+.nav:hover:after {
+    transform: scaleX(1);
+}
+
+.graphic-section,
+.info-section,
+.subNav {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.main-heading-container,
+.image-container {
+    border-radius: 2px;
+}
+
+.subscribe,
+.form-inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vTwo-subscribe-form {
+    display: none;
+}
+
+#firstName,
+#lastName,
+#email {
+    width: 100%;
+    border: none;
+    padding: 5px;
+    font-size: 18px;
+}
+
+::placeholder {
+    opacity: 0.7;
+    text-align: center;
+}
+
+.about-article,
+.money-article,
+.else-info {
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.money-article,
+.else-info {
+    padding-right: 50px;
+}
+
+nav a,
+.sbcr-btn,
+.slide-btn,
+footer {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* UNDIVIDUAL */
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(5, 23, 53);
+}
+
+.info-section {
+    flex-direction: column;
+    overflow: scroll;
+}
+
+.sbcr-btn {
+    margin-top: 30px;
+    padding: 7px 30px;
+    color: rgb(255, 255, 255);
+    border: 1px solid;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.sbcr-btn:hover {
+    border: 1px solid rgb(230, 226, 22);
+    background-color: rgb(230, 226, 22);
+    color: rgb(0,0,0);
+    font-weight: bold;
+}
+
+.motivation-text {
+    display: none;
+}
+
+.subNav {
+    padding: 15px 0px;
+    background-image: url(images/subNav-bg.svg);
+    background-position:center ;
+    
+}
+.slide-btn {
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(5, 23, 53);
+}
+
+.wrapper {
+    display: flex;
+}
+
+.image {
+    height: 100%;
+}
+
+.editible-text {
+    width: 800px;
+    font-family: 'Ledger';
+}
+
+.slogan {
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: 'Nixie One';
+    font-size: 27px;
+    color: rgb(255, 255, 255);
+}
+
+.header {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+footer {
+    background-color: rgb(5, 23, 53);
+    color: rgb(255, 255, 255);
+    justify-content: center;
+}
+
+/* ELEMENTS 1st flex-row */
+
+.graphic-section {
+    height: 400px;
+    
+}
+
+.main-heading-container {
+    height: 150px;
+    width: 500px;
+    margin-left: 50px;
+    border-radius: 3px;
+    vertical-align: center;
+    /* opacity: 0.7; */
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 50px;
+    margin:0 10px 0;
+    flex-grow: 2;
+    background-image: url(images/businessman-working-computer-office-graphs-his-desk-business-ideas-space-copy_24883-1728.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.subscribe {
+    margin-right: 10px;
+    width: 350px;
+}
+
+.subscribe:hover {
+    transform: rotate(0deg);
+    opacity: 1;
+}
+
+input {
+    background-color: transparent;
+}
+
+.form-heading {
+    margin-bottom: 40px;
+    font-family: 'Nixie One';
+    color: rgb(255,255,255);
+}
+
+.client-data{
+    line-height: 30px;
+}
+
+
+/* ELEMENTS 2nd flex-row */
+
+.info-section {
+    height: 480px;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+    margin: 60px 0 0;
+}
+
+.about-article {
+    padding: 0 50px;
+   
+}
+
+.money-article {
+   
+}
+
+.else-info {
+
+}
+
+/* FOOTER */
+
+footer {
+    height: 60px;
+}

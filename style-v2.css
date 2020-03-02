@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 1280px) {
+
+/* UTILITY */
+
+
+body {
+    background-image: url(images/version2bg.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.graphic-section {
+    height: 40%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 2fr ;
+}
+
+.only-mobile-img {
+    display: none;
+}
+
+.image-container {
+    grid-column: 2;
+}
+
+.prime-nav {
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.subscribe {
+    display: none;
+}
+
+.motivation-text {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(5, 23, 53);
+}
+
+.vTwo-subscribe-form {
+    margin-top: 10px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-two {
+    width: 600px;
+    height: 35px;
+    margin-right: 20px;
+    padding: 10px;
+    font-weight: 18px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #35dbcf;
+}
+
+.submit-two {
+    margin-left: 20px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 151, 47);
+    color: #fff;
+}
+
+.submit-two:hover {
+    background-color: #358ea7;
+}
+
+.subNav {
+    display: none;
+}
+
+.wrapper {
+   flex-wrap: wrap;
+
+}
+
+.money-article {
+    background-color: rgb(255, 164, 73);
+}
+
+.else-info {
+    background-color: #fff;
+}
+
+/* COMMON */
+
+.info-section,
+.wrapper,
+.prime-nav,
+.slider{
+    display: flex; 
+}
+
+
+.container {
+    display: grid;
+    grid-template-rows: 420px auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.slogan {
+    font-family: 'Nixie One';
+    color: #fff;
+}
+
+.email-two,
+.submit-two,
+.motivation-text {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* SECTION 1 */
+
+.header {
+    font-size: 56px;
+}
+
+p.slogan {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.nav a {
+    text-decoration: none;
+    padding-right: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(5, 23, 53);
+}
+
+.nav:after {
+    display: block;
+    content: '';
+    border-bottom: solid 2px rgb(255, 164, 73);  
+    transform: scaleX(0);  
+    transition: transform .2s ease-in-out;
+}
+
+.nav:hover:after {
+    transform: scaleX(1);
+}
+
+/* SECTION 2 */
+
+.info-section {
+    margin-top: 100px;
+    height: auto;
+    width: 100%;
+    background-image: url(images/info-section-bg2.svg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slider {
+    flex-direction: column;
+    width: 300px;
+}
+
+.about-article,
+.money-article,
+.else-info {
+    width: 50%;
+    height: 400px;
+    padding: 10px;
+    align-items: center;
+}
+
+.editible-text {
+    width: 80%;
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    padding-bottom: 50px;
+    color: rgb(5, 23, 53);
+    font-weight: bolder;
+}
+
+.image{
+    margin-left: 50px;
+    padding-top: 20px;
+    height: 150px;
+    width: 150px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 10px 0;
+}
+}
+
+@media only screen and (max-width: 320px) {
+
+/* COMMON */
+
+body {
+    background-image: url(images/info-section-bg2.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-article,
+.else-info {
+    margin: 30px 0;
+}
+
+
+/* UTILITY */
+
+.prime-nav {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    padding: 5px 0;
+    background-color: #fff;
+}
+
+.prime-nav a {
+    text-decoration: none;
+    padding-right: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: rgb(5, 23, 53);
+}
+
+.prime-nav:first-child {
+    padding-left: 10px;
+}
+
+.only-mobile-img {
+    padding-top: 30px;
+}
+
+.slogan {
+    margin-left: 10px;
+    font-family: 'Nixie One';
+    color: #fff;
+}
+
+.header {
+    font-size: 40px;
+}
+
+p.slogan {
+    margin-bottom: 15px;
+}
+
+.motivation-text {
+    display: none;
+}
+
+.subscribe {
+    display: none;
+}
+
+form.vTwo-subscribe-form {
+    height: 100px;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.email-two {
+    width: 80%;
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+::placeholder {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+.submit-two {
+    width: 100px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 151, 47);
+    color: #fff;
+    font-size: 12px;
+}
+
+.subNav {
+    display: none;
+}
+
+.money-article {
+    background-color: rgb(255, 164, 73);
+}
+
+.image {
+    margin-left: 100px;
+    padding-top: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+.editible-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 5px 10px 20px;
+    color: rgb(5, 23, 53);
+}
+
+footer {
+    padding: 10px;
+    background-color: #fff;
+}
+
+/* SECTION 1 */
+
+/* SECTION 2 */
+
+
+
+/* FOOTER */
+
+}
